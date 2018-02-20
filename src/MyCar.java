@@ -7,6 +7,16 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * This class creates a Jframe and JPanel object using Java Swing classes. It takes the XML input
+ * file as the argument for its Main method. It reads an XML input file and parses its element node
+ * state. For every state node within the XML file, it calls the method moveCar passing the values
+ * of child nodes namely time, position and speed.
+ * 
+ * @author Priya Renjith
+ * 
+ */
+
 public class MyCar {
 
   public static void main(String[] args) {

@@ -2,7 +2,13 @@ import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-// creates a panel, paints a moving car in the panel.
+/**
+ * This class creates a JPanel object and initializes the X and Y coordinates. It calls the repaint
+ * method to draw an image of a car.
+ * 
+ * @author Priya Renjith
+ */
+
 public class MyPanel extends JPanel {
 
   int x, y;
@@ -15,6 +21,9 @@ public class MyPanel extends JPanel {
     repaint();
   }
 
+  /**
+   * This method draws a car image on the JPanel object.
+   */
   public void paintComponent(Graphics g) {
 
     super.paintComponent(g);
@@ -31,8 +40,15 @@ public class MyPanel extends JPanel {
     g.drawString("3", 136, 15);
   }
 
-  // method to move the car from one point to another
-  // parameter 'p' increased by 6 folds to show the actual movement of car
+  /**
+   * This method is invoked from Mycar.java.
+   * 
+   * @param t time parameter
+   * @param p position parameter
+   * @param s speed parameter parameter p is increased by 6 times and X coordinate is shifted by p
+   *        value. It calls repaint method to draw the car image using the updated X coordinate.
+   */
+
   public void moveCar(int t, int p, int s) {
 
     p = p * 6;

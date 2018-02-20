@@ -1,0 +1,47 @@
+git status
+git add   --to staging area
+git commit -m''
+git push
+open doc index.html
+
+Bash commands
+Go to the directory where the files are located.
+$cd /c/users/Veda\ Renjith/eclipse-workspace/Moving_Car
+
+list the files and folders within the current directory
+$ls
+
+Initializing an empty git repository in c:/users/Veda Renjith/eclipse-workspace/Moving_Car/.git/
+$git init
+
+create a notepad file .gitignore in the same directory
+$ touch .gitignore
+
+lists all the files in the directory
+$ls -al
+
+enter bin/ .settings/ in the .gitignore file
+reads the contents of the .gitignore file
+$cat .gitignore
+
+show the list of files tracked or untracked, committed or uncommitted.
+Untracked files are shown in red color
+$git status
+
+$touch readme.md
+
+to send the files to the staging area
+$git add .
+
+shows the files in green color indicating that they have been staged
+$git status
+
+All the files are now commited to the local git repository
+$git commit -m 'Initial Commit'
+
+syncs the remote git hub with the local git repository
+$git remote add origin http://github.com/Priya-Renjith/Moving-Car.git
+
+pushes all the files in the local repository to the remote github
+$git push -u origin master
+
